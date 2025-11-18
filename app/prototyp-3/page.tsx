@@ -14,48 +14,77 @@ export default function Prototyp3() {
       title: 'Gräv & Markarbete',
       shortDesc: 'Professionell grävning för alla projekt',
       fullDesc: 'Vi utför alla typer av grävarbeten med precision och omsorg. Vårt erfarna team och moderna maskiner garanterar ett resultat i världsklass.',
-      icon: '🚜',
-      color: 'from-amber-500 to-orange-600',
+      icon: (
+        <svg viewBox="0 0 48 48" fill="currentColor" className="w-full h-full">
+          <path d="M8 36h8v-8l12-12 6 6-12 12H14v8h8v-8l16-16-8-8-16 16v8z"/>
+          <rect x="28" y="4" width="6" height="12" transform="rotate(45 31 10)"/>
+        </svg>
+      ),
+      color: 'from-stone-800 via-amber-700 to-yellow-600',
       features: ['Schaktning', 'Markplanering', 'Terrassering', 'Fyllnadsarbeten']
     },
     {
       title: 'Avlopp & Infiltration',
       shortDesc: 'Kompletta avloppslösningar',
       fullDesc: 'Från installation till service - vi hanterar alla aspekter av avlopp och infiltration enligt gällande miljönormer.',
-      icon: '💧',
-      color: 'from-blue-500 to-cyan-600',
+      icon: (
+        <svg viewBox="0 0 48 48" fill="currentColor" className="w-full h-full">
+          <circle cx="24" cy="24" r="16"/>
+          <path d="M24 4 L20 16 M24 4 L28 16 M24 44 L20 32 M24 44 L28 32 M4 24 L16 20 M4 24 L16 28 M44 24 L32 20 M44 24 L32 28"/>
+        </svg>
+      ),
+      color: 'from-slate-800 via-zinc-700 to-slate-600',
       features: ['Avloppsinstallation', 'Infiltrationssystem', 'Pumpstationer', 'Service & underhåll']
     },
     {
       title: 'Dränering runt Hus',
       shortDesc: 'Skydda ditt hem från fukt',
       fullDesc: 'En väl utförd dränering är avgörande för husets livslängd. Vi erbjuder kompletta dräneringslösningar.',
-      icon: '🏠',
-      color: 'from-green-500 to-emerald-600',
+      icon: (
+        <svg viewBox="0 0 48 48" fill="currentColor" className="w-full h-full">
+          <path d="M8 12h32v24H8z"/>
+          <path d="M12 16h24M12 20h24M12 24h24M12 28h24M12 32h24" stroke="white" strokeWidth="2"/>
+        </svg>
+      ),
+      color: 'from-zinc-800 via-stone-700 to-amber-600',
       features: ['Husdränering', 'Fuktsäkring', 'Täckdiken', 'Dräneringssystem']
     },
     {
       title: 'Poolgrävning',
       shortDesc: 'Förbered för din drömpool',
       fullDesc: 'Vi gräver perfekta poolschakt och ser till att allt är förberett för din nya pool. Exakt nivellering garanteras.',
-      icon: '🏊',
-      color: 'from-sky-400 to-blue-600',
+      icon: (
+        <svg viewBox="0 0 48 48" fill="currentColor" className="w-full h-full">
+          <rect x="8" y="16" width="32" height="20" rx="2"/>
+          <path d="M4 30 Q8 28 12 30 T20 30 T28 30 T36 30 T44 30" stroke="white" strokeWidth="2" fill="none"/>
+        </svg>
+      ),
+      color: 'from-amber-700 via-yellow-600 to-amber-500',
       features: ['Poolschakt', 'Nivellering', 'Dräneringsplanering', 'Återfyllning']
     },
     {
       title: 'Husgrund & Väggarbete',
       shortDesc: 'Stabil grund för ditt hem',
       fullDesc: 'Grundläggning är fundamentet för varje bygge. Vi levererar precision och kvalitet i varje husgrund.',
-      icon: '🏗️',
-      color: 'from-stone-500 to-slate-700',
+      icon: (
+        <svg viewBox="0 0 48 48" fill="currentColor" className="w-full h-full">
+          <path d="M8 38h32v4H8zM12 22h24v16H12zM20 10h8l4 12H16z"/>
+        </svg>
+      ),
+      color: 'from-stone-900 via-zinc-800 to-slate-700',
       features: ['Grundschakt', 'Källargrävning', 'Stödmurar', 'Väggförberedelser']
     },
     {
       title: 'Altan & Trädäck',
       shortDesc: 'Förbered för uteplatsen',
       fullDesc: 'Vi skapar den perfekta grunden för din uteplats. Från markarbete till färdig förberedelse.',
-      icon: '🪵',
-      color: 'from-yellow-600 to-amber-700',
+      icon: (
+        <svg viewBox="0 0 48 48" fill="currentColor" className="w-full h-full">
+          <rect x="6" y="24" width="36" height="16"/>
+          <path d="M10 24v-8M18 24v-12M26 24v-8M34 24v-12" stroke="white" strokeWidth="2"/>
+        </svg>
+      ),
+      color: 'from-amber-800 via-yellow-700 to-amber-600',
       features: ['Markberedning', 'Nivellering', 'Grundläggning', 'Stomförberedelse']
     }
   ]
@@ -82,43 +111,43 @@ export default function Prototyp3() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-yellow-50">
+    <div className="min-h-screen bg-gradient-to-br from-stone-100 via-amber-50 to-stone-50">
       <a href="#main-content" className="skip-link">
         Hoppa till huvudinnehåll
       </a>
 
       {/* Navigation */}
-      <nav className="fixed w-full bg-white/90 backdrop-blur-md shadow-lg z-50" role="navigation" aria-label="Huvudnavigation">
+      <nav className="fixed w-full bg-zinc-900/95 backdrop-blur-md shadow-2xl z-50 border-b-4 border-amber-600" role="navigation" aria-label="Huvudnavigation">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
               <Link href="/" className="flex items-center gap-3">
                 <div>
-                  <div className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                  <div className="text-2xl font-black bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 bg-clip-text text-transparent">
                     Trade Of Sweden
                   </div>
-                  <div className="text-xs text-gray-600">Gräv & Markentreprenad</div>
+                  <div className="text-xs text-amber-400 font-bold uppercase tracking-widest">Gräv & Markentreprenad</div>
                 </div>
               </Link>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              <a href="#hem" className="text-gray-700 hover:text-orange-600 font-semibold transition-colors">
+              <a href="#hem" className="text-amber-100 hover:text-amber-400 font-bold transition-colors uppercase tracking-wide">
                 Hem
               </a>
-              <a href="#tjanster" className="text-gray-700 hover:text-orange-600 font-semibold transition-colors">
+              <a href="#tjanster" className="text-amber-100 hover:text-amber-400 font-bold transition-colors uppercase tracking-wide">
                 Tjänster
               </a>
-              <a href="#galleri" className="text-gray-700 hover:text-orange-600 font-semibold transition-colors">
+              <a href="#galleri" className="text-amber-100 hover:text-amber-400 font-bold transition-colors uppercase tracking-wide">
                 Galleri
               </a>
-              <a href="#omdomen" className="text-gray-700 hover:text-orange-600 font-semibold transition-colors">
+              <a href="#omdomen" className="text-amber-100 hover:text-amber-400 font-bold transition-colors uppercase tracking-wide">
                 Omdömen
               </a>
               <a
                 href="#kontakt"
-                className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-6 py-3 rounded-full font-bold hover:shadow-lg hover:scale-105 transition-all"
+                className="bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 text-zinc-900 px-6 py-3 rounded-sm font-black hover:shadow-2xl hover:scale-105 transition-all uppercase tracking-wide border-b-4 border-amber-800"
               >
                 Kontakta oss
               </a>
@@ -127,7 +156,7 @@ export default function Prototyp3() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-orange-100"
+              className="md:hidden p-2 rounded-sm text-amber-400 hover:bg-zinc-800"
               aria-expanded={mobileMenuOpen}
               aria-label="Öppna huvudmeny"
             >
@@ -145,13 +174,13 @@ export default function Prototyp3() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
+          <div className="md:hidden bg-zinc-800 border-t-2 border-amber-600 shadow-2xl">
             <div className="px-4 py-3 space-y-2">
               {['Hem', 'Tjänster', 'Galleri', 'Omdömen', 'Kontakt'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="block px-4 py-3 rounded-lg text-gray-700 hover:bg-orange-100 hover:text-orange-600 font-semibold transition-colors"
+                  className="block px-4 py-3 rounded-sm text-amber-100 hover:bg-zinc-700 hover:text-amber-400 font-bold transition-colors uppercase tracking-wide"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item}

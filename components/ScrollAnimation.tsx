@@ -36,21 +36,27 @@ export default function ScrollAnimation({
         );
       case 'slide-up':
         return (
-          <Slide direction="up" in={isVisible} timeout={timeout} style={style}>
-            <div ref={ref}>{children}</div>
-          </Slide>
+          <div ref={ref}>
+            <Slide direction="up" in={isVisible} timeout={timeout} style={style}>
+              <div>{children}</div>
+            </Slide>
+          </div>
         );
       case 'slide-left':
         return (
-          <Slide direction="left" in={isVisible} timeout={timeout} style={style}>
-            <div ref={ref}>{children}</div>
-          </Slide>
+          <div ref={ref}>
+            <Slide direction="left" in={isVisible} timeout={timeout} style={style}>
+              <div>{children}</div>
+            </Slide>
+          </div>
         );
       case 'slide-right':
         return (
-          <Slide direction="right" in={isVisible} timeout={timeout} style={style}>
-            <div ref={ref}>{children}</div>
-          </Slide>
+          <div ref={ref}>
+            <Slide direction="right" in={isVisible} timeout={timeout} style={style}>
+              <div>{children}</div>
+            </Slide>
+          </div>
         );
       case 'zoom':
         return (

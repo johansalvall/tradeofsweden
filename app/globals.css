@@ -31,7 +31,7 @@ html {
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid #0ea5e9;
+  outline: 2px solid #d97706;
   outline-offset: 2px;
 }
 
@@ -40,7 +40,7 @@ html {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #0ea5e9;
+  background: #d97706;
   color: white;
   padding: 8px;
   text-decoration: none;
@@ -49,4 +49,37 @@ html {
 
 .skip-link:focus {
   top: 0;
+}
+
+/* Construction industry utilities */
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-shadow-md {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .bg-construction-texture {
+    background-image: 
+      linear-gradient(45deg, rgba(0, 0, 0, 0.03) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(0, 0, 0, 0.03) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.03) 75%),
+      linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.03) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  }
+  
+  .bg-metal-gradient {
+    background: linear-gradient(135deg, #475569 0%, #64748b 50%, #475569 100%);
+  }
+  
+  .border-construction {
+    border-color: #d97706;
+  }
 }
